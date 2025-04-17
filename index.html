@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EPICODE Travel</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+      .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/img/EPICODE_Travel-removebg-preview.png" alt="Bootstrap" width="50" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Saldi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Welcome Summer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Last Minute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recensioni</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-info me-2" id="toggleThemeBtn">🌙</button>
+            <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search" />
+            <button class="btn btn-outline-info" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header main -->
+    <div class="container bg-light p-5 mt-5 rounded-3">
+      <div class="row">
+        <div class="col-12 text-center text-md-start">
+          <h1 class="fs-2 fs-md-1 fw-normal d-flex align-items-center text-epicode-1">
+            EPICODE Travel <span class="fs-6 fs-md-5 fw-lighter align-middle">- Feel the Freedom</span>
+          </h1>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center text-md-start">
+          <p class="fs-3 fw-light fst-italic text-epicode-3">Scopri le migliori offerte per le tue vacanze!</p>
+        </div>
+        <div class="text-center text-lg-start">
+          <button type="button" class="col-6 col-md-4 col-lg-2 mt-3 btn btn-info px-2-5 py-0-75 bg-epicode-2 text-white">Prenota ora</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- saldi -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <h3 class="mt-4">Saldi</h3>
+          <button
+            class="btn btn-info bi bi-chevron-down bg-epicode-2 text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          ></button>
+        </div>
+      </div>
+      <div class="row show collapse" id="collapseExample">
+        <!-- card -->
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card mt-4 h-100 border-6 border-info rounded-5 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1707344088547-3cf7cea5ca49?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Deserto Sahara</h5>
+              <p class="card-text">Il più grande deserto caldo del mondo, con sabbia, rocce e oasi.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card mt-4 h-100 border-6 border-info rounded-5 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Canada</h5>
+              <p class="card-text">Il Canada ha milioni di laghi, tra cui alcuni tra i più grandi del mondo.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card mt-4 h-100 border-6 border-info rounded-5 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1721&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Africa</h5>
+              <p class="card-text">Continente vasto e vario, con deserti, savane, foreste e molte culture diverse.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Prenota</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <div class="card mt-4 h-100 border-6 border-info rounded-5 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Madagascar</h5>
+              <p class="card-text">Isola africana con animali unici al mondo, come i lemuri, e grande biodiversità.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Prenota</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- welcome summer -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <h3 class="mt-4">Welcome Summer</h3>
+          <button
+            class="btn btn-info bi bi-chevron-down bg-epicode-2 text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse2"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          ></button>
+        </div>
+      </div>
+      <div class="row show collapse" id="collapse2">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card mt-4 shadow" style="width: 100%">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1681255761027-357cb6059c4b?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <span class="position-absolute top-0 end-0 badge badge text-bg-danger mt-3 me-3">HOT</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Bora Bora</h5>
+              <p class="card-text">Isola tropicale con laguna turchese e bungalow sull’acqua.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card mt-4 shadow" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <span class="position-absolute top-0 end-0 badge badge text-bg-danger mt-3 me-3">HOT</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Maldive</h5>
+              <p class="card-text">Atolli corallini nell’Oceano Indiano, famosi per spiagge bianche e acqua cristallina.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card mt-4 shadow" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1586902197503-e71026292412?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <span class="position-absolute top-0 end-0 badge badge text-bg-danger mt-3 me-3">HOT</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Maui (Hawaii)</h5>
+              <p class="card-text">Isola vulcanica con spiagge dorate, surf e natura lussureggiante.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card mt-4 shadow" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1541417904950-b855846fe074?q=80&w=1741&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <span class="position-absolute top-0 end-0 badge badge text-bg-danger mt-3 me-3">HOT</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Phuket (Thailandia)</h5>
+              <p class="card-text">Spiagge tropicali, scogliere mozzafiato e vita notturna vivace.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card mt-4 shadow" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1521245585918-35fd32bf376f?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <span class="position-absolute top-0 end-0 badge badge text-bg-danger mt-3 me-3">HOT</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Zanzibar (Tanzania)</h5>
+              <p class="card-text">Isola africana con mare turchese, spezie e cultura swahili.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Scopri</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card mt-4 shadow" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1542213493895-edf5b94f5a96?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <span class="position-absolute top-0 end-0 badge badge text-bg-danger mt-3 me-3">HOT</span>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Seychelles</h5>
+              <p class="card-text">Arcipelago nell’Oceano Indiano con spiagge di sabbia rosa e acque limpide.</p>
+              <a href="#" class="btn btn-info mt-auto px-2-5 py-0-75">Scopri</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- offerta del giorno -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <h3 class="mt-4">Offerta del giorno</h3>
+          <button
+            class="btn btn-info bi bi-chevron-down bg-epicode-2 text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse3"
+            aria-expanded="false"
+            aria-controls="collapse3"
+          ></button>
+        </div>
+      </div>
+      <div class="row mt-3 show collapse" id="collapse3">
+        <div class="col-7">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1677494867836-3f56b1261bc5?q=80&w=1708&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid rounded shadow border border-10 border-info"
+          />
+        </div>
+        <div class="col-5">
+          <h3 class="fw-normal fs-1">Ravello, SA, Italy</h3>
+          <p class="fw-lighter">15.04.2025 - 04.05.25</p>
+          <p class="fs-4 fw-lighter">Elegante villa con vista mozzafiato sul mare, immersa nella quiete della natura e baciata dal sole al tramonto.</p>
+          <p class="fs-4 fw-lighter">€ 800,00</p>
+          <button type="button" class="btn btn-info px-2-5 py-0-75">Prenota ora</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- last minute -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <h3 class="mt-4">Last Minute</h3>
+          <button
+            class="btn btn-info bi bi-chevron-down bg-epicode-2 text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse4"
+            aria-expanded="false"
+            aria-controls="collapse4"
+          ></button>
+        </div>
+      </div>
+      <div class="row show collapse" id="collapse4">
+        <div class="col-6 col-md-4 col-lg-4 mt-4">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1676667573062-9f8a58721c29?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid shadow w-100 h-100"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-4 mt-4">
+          <img
+            src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid shadow w-100 h-100"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-4 mt-4">
+          <img
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid shadow w-100 h-100"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-4 mt-4">
+          <img
+            src="https://images.unsplash.com/photo-1498307833015-e7b400441eb8?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid shadow w-100 h-100"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-4 mt-4">
+          <img
+            src="https://images.unsplash.com/photo-1505832018823-50331d70d237?q=80&w=1808&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid shadow w-100 h-100"
+          />
+        </div>
+        <div class="col-6 col-md-4 col-lg-4 mt-4">
+          <img
+            src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid shadow w-100 h-100"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- about us -->
+    <h3 class="text-center mt-5">Dicono di Noi</h3>
+    <div class="container mb-5">
+      <!-- 1 -->
+      <div class="row mt-5">
+        <div class="col-auto text-center">
+          <img
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid rounded-circle border border-2 border-info h-auto"
+            width="60"
+          />
+        </div>
+        <div class="col">
+          <h3>Paolo Rossi</h3>
+          <p>Un’esperienza indimenticabile! Tutto organizzato nei minimi dettagli, non vedo l’ora di ripartire!</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="row mt-5">
+        <div class="col-auto text-center">
+          <img
+            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid rounded-circle border border-2 border-info h-auto"
+            width="60"
+          />
+        </div>
+        <div class="col">
+          <h3>Matteo Bianchi</h3>
+          <p>Viaggio perfetto! Luoghi meravigliosi e assistenza impeccabile. Consigliatissimo!</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="row mt-5">
+        <div class="col-auto text-center">
+          <img
+            src="https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="img-fluid rounded-circle border border-2 border-info h-auto"
+            width="60"
+          />
+        </div>
+        <div class="col">
+          <h3>Laura Pizzi</h3>
+          <p>Grazie a questo sito ho scoperto destinazioni da sogno. Affidabili, professionali e super disponibili!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="bg-dark p-3 fs-8">
+      <div class="container text-center text-white">
+        <!-- Button trigger modal -->
+        <div class="text-center">
+          <button type="button" class="btn btn-secondary mt-4 fs-8 px-2-5 py-0-75" data-bs-toggle="modal" data-bs-target="#exampleModal">Contattaci</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade text-start" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Inserisci i tuoi dati</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleInputText" aria-describedby="text" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                    <label class="form-check-label" for="exampleCheck1">Acconsento al trattamento dei miei dati</label>
+                  </div>
+                  <button type="submit" class="btn btn-info">Invia</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">&copy; 2025 EPICODE Travel – Tutti i diritti riservati.</p>
+      </div>
+    </div>
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const toggleBtn = document.getElementById("toggleThemeBtn");
+      const htmlEl = document.documentElement;
+      const container = document.querySelector(".container.bg-light");
+
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        htmlEl.setAttribute("data-bs-theme", savedTheme);
+        if (savedTheme === "dark") {
+          container.classList.add("bg-dark", "text-white");
+          container.classList.remove("bg-light");
+          toggleBtn.textContent = "🌞";
+        } else {
+          container.classList.add("bg-light");
+          container.classList.remove("bg-dark", "text-white");
+          toggleBtn.textContent = "🌙";
+        }
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        console.log("Button clicked");
+        const currentTheme = htmlEl.getAttribute("data-bs-theme");
+        console.log("Current theme:", currentTheme);
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        htmlEl.setAttribute("data-bs-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        console.log("New theme set to:", newTheme);
+
+        if (newTheme === "dark") {
+          container.classList.add("bg-dark", "text-white");
+          container.classList.remove("bg-light");
+          console.log("Dark theme applied");
+        } else {
+          container.classList.add("bg-light");
+          container.classList.remove("bg-dark", "text-white");
+          console.log("Light theme applied");
+        }
+        toggleBtn.textContent = newTheme === "dark" ? "🌞" : "🌙";
+        console.log("Button text updated to:", toggleBtn.textContent);
+      });
+    </script>
+  </body>
+</html>
